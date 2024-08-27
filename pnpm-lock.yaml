@@ -53,6 +53,9 @@ importers:
       react-hook-form:
         specifier: ^7.53.0
         version: 7.53.0(react@18.2.0)
+      react-toastify:
+        specifier: ^10.0.5
+        version: 10.0.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       sugar-high:
         specifier: ^0.6.0
         version: 0.6.0
@@ -321,6 +324,10 @@ packages:
 
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
 
   comma-separated-tokens@2.0.3:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
@@ -706,6 +713,12 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
 
+  react-toastify@10.0.5:
+    resolution: {integrity: sha512-mNKt2jBXJg4O7pSdbNUfDdTsK9FIdikfsIE/yUCxbAEXl4HMyJaivrVFcn3Elvt5xvCQYhUZm+hqTIu1UXM3Pw==}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
+
   react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -1049,6 +1062,8 @@ snapshots:
   character-reference-invalid@2.0.1: {}
 
   client-only@0.0.1: {}
+
+  clsx@2.1.1: {}
 
   comma-separated-tokens@2.0.3: {}
 
@@ -1619,6 +1634,12 @@ snapshots:
   react-hook-form@7.53.0(react@18.2.0):
     dependencies:
       react: 18.2.0
+
+  react-toastify@10.0.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      clsx: 2.1.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
 
   react@18.2.0:
     dependencies:
