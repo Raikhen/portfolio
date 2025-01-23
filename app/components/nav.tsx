@@ -10,14 +10,12 @@ const navItems = {
   '/publications': {
     name: 'publications'
   },
+  '/blog': {
+    name: 'thoughts'
+  },
   '/contact': {
     name: 'contact'
   },
-  /*
-  '/blog': {
-    name: 'blog'
-  },
-  */
 }
 
 export function Navbar() {
