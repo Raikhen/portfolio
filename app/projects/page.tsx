@@ -13,17 +13,19 @@ export default function Page() {
         <section>
           <h2 className="mb-5 text-xl font-semibold tracking-tighter">Chesslet</h2>
           <div className="grid grid-cols-3 gap-8">
-            <Link href="https://chesslet.xyz" target="_blank">
-              <Image
-                className="rounded cursor-pointer hover:scale-103 transform transition duration-300 ease-in-out"
-                src="/projects/chesslet.png"
-                width={600}
-                height={300}
-                quality={100}
-                alt="Screenshot of Chesslet"
-              />
-            </Link>
-            <div className="col-span-2 flex flex-col space-y-4">
+            <div className="hidden md:block">
+              <Link href="https://chesslet.xyz" target="_blank">
+                <Image
+                  className="rounded cursor-pointer hover:scale-103 transform transition duration-300 ease-in-out"
+                  src="/projects/chesslet.png"
+                  width={600}
+                  height={300}
+                  quality={100}
+                  alt="Screenshot of Chesslet"
+                />
+              </Link>
+            </div>
+            <div className="col-span-3 md:col-span-2 flex flex-col space-y-4">
               <p>
                 {
                   `Chesslet is a chess-based puzzle game in which the player must capture their
@@ -45,17 +47,19 @@ export default function Page() {
         <section>
           <h2 className="mb-5 text-xl font-semibold tracking-tighter">Smart Crack Trainer</h2>
           <div className="grid grid-cols-3 gap-8">
-            <Link href="https://mugz-crack-trainer.vercel.app/" target="_blank">
-              <Image
-                className="rounded cursor-pointer hover:scale-103 transform transition duration-300 ease-in-out"
-                src="/projects/crack-trainer-website.png"
-                width={600}
-                height={300}
-                quality={100}
-                alt="Screenshot of the Smart Crack Trainer website"
-              />
-            </Link>
-            <div className="col-span-2 flex flex-col space-y-4">
+            <div className="hidden md:block">
+              <Link href="https://mugz-crack-trainer.vercel.app/" target="_blank">
+                <Image
+                  className="rounded cursor-pointer hover:scale-103 transform transition duration-300 ease-in-out"
+                  src="/projects/crack-trainer-website.png"
+                  width={600}
+                  height={300}
+                  quality={100}
+                  alt="Screenshot of the Smart Crack Trainer website"
+                />
+              </Link>
+            </div>
+            <div className="col-span-3 md:col-span-2 flex flex-col space-y-4">
               <p>
                 {
                   `I built a crack trainer (a structure to practice a particular style of
