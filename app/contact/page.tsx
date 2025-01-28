@@ -1,6 +1,11 @@
 import StyledLink from 'app/components/styled-link'
 import ContactForm from 'app/components/contact-form'
 
+export const metadata = {
+  title: 'Contact',
+  description: 'Reach out to me.',
+}
+
 export default function Page() {
   return (
     <section>

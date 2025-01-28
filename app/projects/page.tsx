@@ -2,6 +2,11 @@ import Link from  'next/link'
 import Image from 'next/image'
 import Button from 'app/components/button'
 
+export const metadata = {
+  title: 'Projects',
+  description: 'Some of my recent projects.',
+}
+
 export default function Page() {
   return (
     <section>
