@@ -1,6 +1,5 @@
 import Link from  'next/link'
 import Image from 'next/image'
-import StyledLink from 'app/components/styled-link'
 import Button from 'app/components/button'
 
 export default function Page() {

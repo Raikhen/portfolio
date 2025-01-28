@@ -1,4 +1,5 @@
 import './global.css'
+import Head from 'next/head'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
@@ -52,6 +53,11 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <Head>
+        <link rel="preload" href="/images/dylan.png" as="image" />
+        <link rel="preload" href="/projects/chesslet.png" as="image" />
+        <link rel="preload" href="/projects/crack-trainer-website.png" as="image" />
+      </Head>
       <body className="antialiased max-w-xl px-4 mt-8 m-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
