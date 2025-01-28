@@ -24,13 +24,17 @@ export default function Footer() {
       href: 'https://github.com/raikhen',
     },
     {
+      name: 'linkedin',
+      href: 'https://www.linkedin.com/in/dylan-fridman',
+    },
+    {
       name: 'scholar',
       href: 'https://scholar.google.com/citations?hl=en&user=sjk8-F8AAAAJ',
     },
     {
-      name: 'linkedin',
-      href: 'https://www.linkedin.com/in/dylan-fridman',
-    }
+      name: 'curriculum vitae',
+      href: '/cv.pdf',
+    },
   ]
 
   return (

@@ -12,11 +12,6 @@ export default function Page() {
         Although I did my undergraduate in Mathematics, I'm moving away from pure math and towards
         more applied areas of computer science since I believe that's how I can make the most impact.`}
       </p>
-      <p>
-        {`Take a look at my `}
-        <StyledLink inParagraph href="/cv.pdf">CV</StyledLink>
-        .
-      </p>
     </section>
   )
 }
