@@ -17,11 +17,16 @@ function ArrowIcon() {
   )
 }
 
-export default function StyledLink({ href, children, inParagraph = false }) {
+export default function StyledLink({
+  href,
+  children,
+  inParagraph = false,
+  internal = false
+}) {
   return (
     <Link
       href={href}
-      target="_blank"
+      target={internal ? '_self' : '_blank'}
       className={`inline-flex items-center transform duration-500 px-1.5
         ${inParagraph ? 'hover:text-yellow-500' : 'hover:text-yellow-500'}`}
     >

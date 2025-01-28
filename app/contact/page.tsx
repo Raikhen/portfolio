@@ -9,7 +9,7 @@ export default function Page() {
       </h1>
       <ContactForm />
       <p className="mt-8">
-        {`Equivalently, you can reach out to me at `}
+        {`Or you can reach out to me at `}
         <StyledLink inParagraph href="mailto:dylan.fridman.gr@dartmouth.edu">
           dylan.fridman.gr@dartmouth.edu
         </StyledLink>.

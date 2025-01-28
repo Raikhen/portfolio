@@ -22,6 +22,6 @@ export default function Page() {
   }))
 
   return (
-    <List name="Thoughts" elements={sortedBlogs} />
+    <List name="Thoughts" elements={sortedBlogs} internalLinks />
   )
 }

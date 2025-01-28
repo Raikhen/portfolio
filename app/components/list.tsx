@@ -10,9 +10,15 @@ interface ListProps {
   name: String;
   elements: Element[];
   className?: string;
+  internalLinks?: boolean;
 }
 
-export default function List({ name, elements, className }: ListProps) {
+export default function List({
+  name,
+  elements,
+  className,
+  internalLinks = false
+}: ListProps) {
   return (
      <section className={className ? className : ''}>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
@@ -24,12 +30,12 @@ export default function List({ name, elements, className }: ListProps) {
             key={e.url}
             className="flex flex-col space-y-1 mb-4"
           >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-400 w-[160px]">
+            <div className="w-full grid grid-cols-3 gap-x-2">
+              <p className="text-neutral-400 col-span-1">
                 {e.from}
               </p>
-              <p className="text-neutral-100 tracking-tight">
-                <StyledLink href={e.url}>
+              <p className="text-neutral-100 tracking-tight col-span-2">
+                <StyledLink href={e.url} internal={internalLinks}>
                     {e.name}
                 </StyledLink>
               </p>
