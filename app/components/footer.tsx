@@ -32,8 +32,12 @@ export default function Footer() {
       href: 'https://scholar.google.com/citations?hl=en&user=sjk8-F8AAAAJ',
     },
     {
-      name: 'curriculum vitae',
+      name: 'cv',
       href: '/cv.pdf',
+    },
+    {
+      name: 'email',
+      href: 'mailto:dylanfridman@gmail.com',
     },
   ]
 

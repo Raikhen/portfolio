@@ -13,8 +13,8 @@ const navItems = {
   '/blog': {
     name: 'thoughts'
   },
-  '/contact': {
-    name: 'contact'
+  '/favorites': {
+    name: 'favorites'
   },
 }
 

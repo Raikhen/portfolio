@@ -6,6 +6,8 @@ export const metadata = {
   description: 'Reach out to me.',
 }
 
+// FIX - Contact form works locally but not on deployment for some reason
+
 export default function Page() {
   return (
     <section>
