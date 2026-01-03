@@ -1,4 +1,5 @@
-import StyledLink from "./styled-link"
+import Link from 'next/link'
+import StyledLink from './styled-link'
 
 function ArrowIcon() {
   return (
@@ -43,17 +44,23 @@ export default function Footer() {
 
   return (
     <footer className="mb-16 mt-8">
-      <ul className="-ml-1.5 font-sm mt-8 flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0 text-neutral-100">
+      <ul className="-ml-[8px] font-sm mt-8 flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0 text-neutral-100">
         {elements.map((e) => (
-          <li key={e.name}>
-            <StyledLink inParagraph href={e.href}>
-              {e.name}
-            </StyledLink>
-          </li>
+          <Link
+            key={e.href}
+            href={e.href}
+            className="transition-all hover:text-yellow-500 transform duration-500 flex align-middle relative py-1 px-2 m-1"
+          >
+            {e.name}
+          </Link>
         ))}
       </ul>
       <p className="mt-8 text-neutral-300">
-        © {new Date().toLocaleString('en-us',{ month:'short', year:'numeric' })}
+        ©{' '}
+        {new Date().toLocaleString('en-us', {
+          month: 'short',
+          year: 'numeric',
+        })}
       </p>
     </footer>
   )

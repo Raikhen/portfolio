@@ -5,16 +5,16 @@ const navItems = {
     name: 'home',
   },
   '/publications': {
-    name: 'publications'
+    name: 'publications',
   },
   '/projects': {
-    name: 'projects'
+    name: 'projects',
   },
   '/blog': {
-    name: 'thoughts'
+    name: 'blog',
   },
   '/favorites': {
-    name: 'favorites'
+    name: 'favorites',
   },
 }
 

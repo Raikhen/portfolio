@@ -21,19 +21,17 @@ export default function StyledLink({
   href,
   children,
   inParagraph = false,
-  internal = false
+  internal = false,
 }) {
   return (
     <Link
       href={href}
       target={internal ? '_self' : '_blank'}
-      className={`inline-flex items-center transform duration-500 px-1.5
-        ${inParagraph ? 'hover:text-yellow-500' : 'hover:text-yellow-500'}`}
+      className={`hover:text-yellow-500 ${
+        inParagraph ? 'font-semibold' : ''
+      } transition-all duration-500`}
     >
-      {inParagraph ? <ArrowIcon /> : null}
-      <span className="ml-2">
-        {children}
-      </span>
+      <span>{children}</span>
     </Link>
   )
 }
