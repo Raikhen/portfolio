@@ -10,13 +10,17 @@ export default function Page() {
       <div className="grid grid-cols-3 space-x-8">
         <div className="col-span-2 flex flex-col gap-6">
           <p>
-            I'm a software engineer at <StyledLink href="https://ivo.ai" inParagraph>Ivo</StyledLink>.
+            I'm a currently working as a software engineer at{' '}
+            <StyledLink href="https://ivo.ai" inParagraph>
+              Ivo
+            </StyledLink>
+            . Before that, I was studying Mathematics and Computer Science at
+            Dartmouth College.
           </p>
           <p>
-            Before joining Ivo, I was studying Mathematics and Computer Science at Dartmouth College.
-          </p>
-          <p>
-            Whenever I'm not working, you can find me out in the mountains or laying on the floor after unsuccessfully trying some calisthenics skill.
+            Whenever I'm not working, you can find me out in the mountains or
+            laying on the floor after unsuccessfully trying some calisthenics
+            skill.
           </p>
         </div>
         <div className="col-span-1">

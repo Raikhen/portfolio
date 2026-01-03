@@ -47,6 +47,7 @@ export default function Footer() {
       <ul className="-ml-[8px] font-sm mt-8 flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0 text-neutral-100">
         {elements.map((e) => (
           <Link
+            target="_blank"
             key={e.href}
             href={e.href}
             className="transition-all hover:text-yellow-500 transform duration-500 flex align-middle relative py-1 px-2 m-1"
