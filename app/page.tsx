@@ -10,18 +10,14 @@ export default function Page() {
       <div className="grid grid-cols-3 space-x-8">
         <div className="col-span-2 flex flex-col gap-6">
           <p>
-            I'm a currently working as a software engineer at{' '}
-            <StyledLink href="https://ivo.ai" inParagraph>
-              Ivo
-            </StyledLink>
-            . Before that, I was studying Mathematics and Computer Science at
-            Dartmouth College.
+            Software engineer with a pure math background based in San
+            Francisco.
           </p>
           <p>
-            Whenever I'm not working, you can find me out in the mountains or
-            laying on the floor after unsuccessfully trying some calisthenics
-            skill.
+            I care about making AGI go well. I'm actively looking for
+            interesting projects so reach out if you want to collaborate.
           </p>
+          <p>Big fan of pointy chunks of granite.</p>
         </div>
         <div className="col-span-1">
           <Image
