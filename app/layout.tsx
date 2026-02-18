@@ -1,5 +1,4 @@
 import './global.css'
-import Head from 'next/head'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
@@ -15,10 +14,10 @@ export const metadata: Metadata = {
     default: 'Dylan Fridman',
     template: '%s | Dylan Fridman',
   },
-  description: 'Dylan Fridman\' Website.',
+  description: "Dylan Fridman's Website.",
   openGraph: {
     title: 'Dylan Fridman',
-    description: 'Dylan Fridman\' Website.',
+    description: "Dylan Fridman's Website.",
     url: baseUrl,
     siteName: 'Dylan Fridman',
     locale: 'en_US',
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
   },
 }
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
+const cx = (...classes: (string | undefined)[]) => classes.filter(Boolean).join(' ')
 
 export default function RootLayout({
   children,
@@ -53,11 +52,6 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <Head>
-        <link rel="preload" href="/images/dylan.png" as="image" />
-        <link rel="preload" href="/projects/chesslet.png" as="image" />
-        <link rel="preload" href="/projects/crack-trainer-website.png" as="image" />
-      </Head>
       <body className="antialiased max-w-xl px-4 mt-8 m-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />

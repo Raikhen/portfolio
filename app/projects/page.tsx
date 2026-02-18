@@ -1,6 +1,6 @@
-import Link from  'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
-import Button from 'app/components/button'
+import StyledLink from 'app/components/styled-link'
 
 export const metadata = {
   title: 'Projects',
@@ -10,74 +10,80 @@ export const metadata = {
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Projects
-      </h1>
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">Projects</h1>
       <div className="flex flex-col space-y-10">
-        <section>
-          <h2 className="mb-5 text-xl font-semibold tracking-tighter">Chesslet</h2>
-          <div className="grid grid-cols-3 gap-8">
-            <div className="hidden md:block">
-              <Link href="https://chesslet.xyz" target="_blank">
-                <Image
-                  className="rounded cursor-pointer hover:scale-103 transform transition duration-300 ease-in-out"
-                  src="/projects/chesslet.png"
-                  width={600}
-                  height={300}
-                  quality={100}
-                  alt="Screenshot of Chesslet"
-                />
-              </Link>
-            </div>
-            <div className="col-span-3 md:col-span-2 flex flex-col space-y-4">
-              <p>
-                {
-                  `Chesslet is a chess-based puzzle game in which the player must capture their
-                  own pieces until only one remains. You can play it online and I also made a physical
-                  version of the game that uses LEDs to display the different puzzles:`
-                }
-              </p>
-              <div className="aspect-[16/9] rounded-lg overflow-hidden shadow-xl">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CHV2Ymn3NjA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-              </div>
-              <div className="flex justify-end">
-                <Button link="http://chesslet.xyz" target="_blank">
-                  Play the game
-                </Button>
-              </div>
-            </div>
+        <section className="flex items-start gap-5">
+          <Link
+            href="https://dihedral.app/"
+            target="_blank"
+            className="shrink-0"
+          >
+            <Image
+              src="/projects/dihedral-logo.svg"
+              width={64}
+              height={64}
+              alt="Dihedral logo"
+            />
+          </Link>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tighter mb-1">
+              <StyledLink href="https://dihedral.app/">Dihedral</StyledLink>
+            </h2>
+            <p>
+              A learning platform for climbing systems that sharpens the user's
+              problem-solving skills by presenting them with difficult,
+              realistic scenarios.
+            </p>
           </div>
         </section>
-        <section>
-          <h2 className="mb-5 text-xl font-semibold tracking-tighter">Smart Crack Trainer</h2>
-          <div className="grid grid-cols-3 gap-8">
-            <div className="hidden md:block">
-              <Link href="https://mugz-crack-trainer.vercel.app/" target="_blank">
-                <Image
-                  className="rounded cursor-pointer hover:scale-103 transform transition duration-300 ease-in-out"
-                  src="/projects/crack-trainer-website.png"
-                  width={600}
-                  height={300}
-                  quality={100}
-                  alt="Screenshot of the Smart Crack Trainer website"
-                />
-              </Link>
-            </div>
-            <div className="col-span-3 md:col-span-2 flex flex-col space-y-4">
-              <p>
-                {
-                  `I built a crack trainer (a structure to practice a particular style of
-                  rock climbing) with buttons at each end to automatically log how many
-                  laps the climber has done for each given crack size. The logs are
-                  uploaded to a website so that users can track their progress over time.
-                  This project combined woodworking, electronics, and web development, which
-                  proved to be quite the fun challenge.`
-                }
-              </p>
-              <div className="aspect-[16/9] rounded-lg overflow-hidden shadow-xl">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QUQfnm_Hhsk" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-              </div>
-            </div>
+        <section className="flex items-start gap-5">
+          <Link
+            href="https://chesslet.xyz"
+            target="_blank"
+            className="shrink-0"
+          >
+            <Image
+              src="/projects/chesslet-logo.svg"
+              width={64}
+              height={64}
+              alt="Chesslet logo"
+            />
+          </Link>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tighter mb-1">
+              <StyledLink href="https://chesslet.xyz">Chesslet</StyledLink>
+            </h2>
+            <p>
+              A chess puzzle game in which the player must capture their own
+              pieces until only one remains.
+            </p>
+          </div>
+        </section>
+        <section className="flex items-start gap-5">
+          <Link
+            href="https://boycottcarelessai.org/"
+            target="_blank"
+            className="shrink-0"
+          >
+            <Image
+              src="/projects/boycott-logo.svg"
+              width={64}
+              height={64}
+              alt="Boycott Careless AI logo"
+              className="rounded"
+            />
+          </Link>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tighter mb-1">
+              <StyledLink href="https://boycottcarelessai.org/">
+                Boycott Careless AI
+              </StyledLink>
+            </h2>
+            <p>
+              A campaign encouraging LLM consumers to limit their model usage to
+              the most responsible frontier labs, as established by the Future
+              of Life Institute's AI Safety Index.
+            </p>
           </div>
         </section>
       </div>

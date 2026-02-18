@@ -1,5 +1,4 @@
 import List from 'app/components/list'
-import { url } from 'inspector'
 
 export const metadata = {
   title: 'Publications',
@@ -22,9 +21,14 @@ export default function Page() {
 
   let notes = [
     {
+      name: 'Self-Serving Bias in LLM Evaluations',
+      url: '/papers/self-serving.pdf',
+      from: 'December 2025',
+    },
+    {
       name: 'On Finding a Small Set of Atomic Interventions to Identify a Causal Model',
       url: '/papers/atomic-interventions.pdf',
-      from: 'June 2025'
+      from: 'June 2025',
     },
     {
       name: 'Checkmate, Climbers',

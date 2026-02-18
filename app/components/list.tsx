@@ -2,6 +2,7 @@ import StyledLink from './styled-link'
 
 interface Element {
   name: string
+  author?: string
   url: string
   from: string
 }
@@ -36,7 +37,7 @@ export default function List({
               </p>
               <p className="text-neutral-100 tracking-tight col-span-2">
                 <StyledLink href={e.url} internal={internalLinks}>
-                    {e.name}
+                    {e.name}{e.author && <span className="text-neutral-400 group-hover/link:text-inherit"> by {e.author}</span>}
                 </StyledLink>
               </p>
             </div>
