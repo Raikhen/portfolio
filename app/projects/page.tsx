@@ -86,6 +86,32 @@ export default function Page() {
             </p>
           </div>
         </section>
+        <section className="flex items-start gap-5">
+          <Link
+            href="https://climbing-bench.vercel.app/"
+            target="_blank"
+            className="shrink-0"
+          >
+            <Image
+              src="/projects/climbingbench-logo.png"
+              width={64}
+              height={64}
+              alt="ClimbingBench logo"
+              className="invert scale-[1.2]"
+            />
+          </Link>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tighter mb-1">
+              <StyledLink href="https://climbing-bench.vercel.app/">
+                ClimbingBench
+              </StyledLink>
+            </h2>
+            <p>
+              A benchmark for evaluating how well LLMs understand climbing
+              systems and how well they can problem-solve.
+            </p>
+          </div>
+        </section>
       </div>
     </section>
   )
