@@ -112,6 +112,36 @@ export default function Page() {
             </p>
           </div>
         </section>
+        <section className="flex items-start gap-5">
+          <Link
+            href="https://unverbalized-biases.vercel.app/"
+            target="_blank"
+            className="shrink-0"
+          >
+            <Image
+              src="/projects/unverbalized-biases-logo.svg"
+              width={64}
+              height={64}
+              alt="Unverbalized Biases logo"
+              className="rounded"
+            />
+          </Link>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tighter mb-1">
+              <StyledLink href="https://unverbalized-biases.vercel.app/">
+                Unverbalized Biases
+              </StyledLink>
+            </h2>
+            <p>
+              Interactive demo showing hidden biases that LLMs exhibit but never
+              mention in their reasoning. Based on the paper{' '}
+              <em>
+                Biases in the Blind Spot: Detecting What LLMs Fail to Mention
+              </em>{' '}
+              by Arcuschin, Chanin, Garriga-Alonso &amp; Camburu (2025).
+            </p>
+          </div>
+        </section>
       </div>
     </section>
   )
