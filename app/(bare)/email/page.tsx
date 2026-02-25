@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function EmailPage() {
   return (
-    <section className="prose highlight-links">
+    <section className="prose">
       <p>Hi,</p>
 
       <p>
