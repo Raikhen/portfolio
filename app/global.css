@@ -36,7 +36,8 @@ html {
 }
 
 .prose a {
-  @apply underline transition-all decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+  @apply underline transition-all underline-offset-2 decoration-[0.1em];
+  text-decoration-color: rgb(234 179 8);
 }
 
 .prose .anchor:after {
@@ -167,6 +168,27 @@ table {
 }
 
 .highlight-link:focus-visible {
+  outline: 2px solid rgb(234 179 8);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.highlight-links a {
+  background-image: linear-gradient(rgb(234 179 8), rgb(234 179 8));
+  background-size: 0% 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-out 0.1s, color 0.3s ease-out 0.1s;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.highlight-links a:hover {
+  background-size: 100% 100%;
+  color: black;
+}
+
+.highlight-links a:focus-visible {
   outline: 2px solid rgb(234 179 8);
   outline-offset: 2px;
   border-radius: 2px;

@@ -1,5 +1,5 @@
 import List from 'app/components/list'
-import { formatDate, getBlogPosts } from 'app/blog/utils'
+import { formatDate, getBlogPosts } from 'app/(main)/blog/utils'
 
 export const metadata = {
   title: 'Blog',
