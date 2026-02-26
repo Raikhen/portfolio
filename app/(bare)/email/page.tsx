@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AI Safety',
+  title: 'Email',
   robots: {
     index: false,
     follow: false,
@@ -21,13 +21,13 @@ export default function EmailPage() {
       <p>
         I should preface by saying that I know some of this might sound
         completely wild. Please remember that, at least since the last time we
-        saw each other, I'm not (that) crazy and neither are the many people and
-        organizations working on existential risks from AI. Even the CEOs of the
-        companies building this technology put a really high probability on
-        catastrophic risks from AI: Elon Musk, founder of xAI, thinks it's
-        between{' '}
+        saw each other, I&apos;m not (that) crazy and neither are the many
+        people and organizations working on existential risks from AI. Even the
+        CEOs of the companies building this technology put a really high
+        probability on catastrophic risks from AI: Elon Musk, founder of xAI,
+        thinks it&apos;s between{' '}
         <a href="https://www.youtube.com/watch?v=akXMYvKjUxM">10% and 20%</a>{' '}
-        and Dario Amodei, CEO of Anthropic, thinks it's between{' '}
+        and Dario Amodei, CEO of Anthropic, thinks it&apos;s between{' '}
         <a href="https://x.com/liron/status/1710520914444718459">
           10% and 25%
         </a>
@@ -52,18 +52,15 @@ export default function EmailPage() {
           accelerating to every ~89 days
         </a>{' '}
         under their latest methodology). To put that in concrete terms: GPT-4
-        (early 2023) had a time horizon of{' '}
-        <a href="https://metr.org/time-horizons/">roughly 4 minutes</a>; Claude
-        Opus 4.6 (February 2026) has a time horizon of{' '}
-        <a href="https://en.wikipedia.org/wiki/METR">roughly 14.5 hours</a>,
-        though with a very wide confidence interval. METR found{' '}
+        (early 2023) had a time horizon of roughly 4 minutes; Claude Opus 4.6
+        (February 2026) has a time horizon of roughly 14.5 hours, though with a
+        very wide confidence interval. METR found{' '}
         <a href="https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/">
           similar exponential trends in other intellectual domains
         </a>{' '}
         such as math contests, scientific QA, and computer use, although each
-        individual domain trend is based on less data and therefore weaker on
-        its own. No domain they examined shows sub-exponential growth or
-        stagnation.
+        individual domain trend is based on less data and therefore weaker on its
+        own. No domain they examined shows sub-exponential growth or stagnation.
       </p>
 
       <p>
@@ -72,10 +69,10 @@ export default function EmailPage() {
         <a href="https://arxiv.org/pdf/2001.08361">
           first documented by researchers at OpenAI in 2020
         </a>
-        , that AI performance improves as a power law. In fact, OpenAI used
-        scaling laws to{' '}
+        : AI performance improves as a power law. In fact, OpenAI used scaling
+        laws to{' '}
         <a href="https://arxiv.org/abs/2303.08774">
-          predict GPT-4's performance before training it
+          predict GPT-4&apos;s performance before training it
         </a>
         , using only experiments run at 1/1,000th the compute. According to{' '}
         <a href="https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year">
@@ -97,17 +94,18 @@ export default function EmailPage() {
         that outperforms human experts at almost all most economically valuable
         cognitive work):{' '}
         <a href="https://www.dwarkesh.com/p/dario-amodei-2">
-          Anthropic's CEO
+          Anthropic&apos;s CEO
         </a>{' '}
-        says he believes we could have "a country of geniuses in a data center
-        in a few years";{' '}
-        <a href="https://blog.samaltman.com/reflections">OpenAI's CEO</a> wrote
-        in January 2025 that "we are now confident we know how to build AGI";
-        and{' '}
+        says he believes we could have &ldquo;a country of geniuses in a data
+        center in a few years&rdquo;;{' '}
+        <a href="https://blog.samaltman.com/reflections">OpenAI&apos;s CEO</a>{' '}
+        wrote in January 2025 that &ldquo;we are now confident we know how to
+        build AGI&rdquo;; and{' '}
         <a href="https://www.youtube.com/watch?v=T9Knc3Mdcec&t=2s">
-          Google DeepMind's CEO
+          Google DeepMind&apos;s CEO
         </a>{' '}
-        says we're "probably three to five years away." Also, in a{' '}
+        says we&apos;re &ldquo;probably three to five years away.&rdquo; Also,
+        in a{' '}
         <a href="https://arxiv.org/abs/2401.02843">
           2023 survey of thousands of published AI researchers
         </a>
@@ -120,10 +118,11 @@ export default function EmailPage() {
         <a href="https://helentoner.substack.com/p/long-timelines-to-advanced-ai-have">
           puts it
         </a>
-        : what used to count as "long timelines" are now crazy short. Even the
-        skeptics are now talking about a 20% chance of AI doing most cognitive
-        tasks by 2045. That would have been a radical short-timeline claim just
-        a few years ago. In concrete terms: AGI now has roughly a{' '}
+        : what used to count as &ldquo;long timelines&rdquo; are now crazy
+        short. Even the skeptics are now talking about a 20% chance of AI doing
+        most cognitive tasks by 2045. That would have been a radical
+        short-timeline claim just a few years ago. In concrete terms: AGI now
+        has roughly a{' '}
         <a href="https://80000hours.org/2025/03/when-do-experts-expect-agi-to-arrive/">
           25% chance of arriving by 2029 and a 50% chance by the early 2030s
         </a>
@@ -151,7 +150,8 @@ export default function EmailPage() {
       <h3>Misalignment</h3>
 
       <p>
-        The problem of specifying to a machine how to behave "nicely" is{' '}
+        The problem of specifying to a machine how to behave &ldquo;nicely&rdquo;
+        is{' '}
         <a href="https://www.alignmentforum.org/posts/epjuxGnSPof3GnMSL/alignment-remains-a-hard-unsolved-problem">
           extremely hard
         </a>
@@ -167,293 +167,230 @@ export default function EmailPage() {
           blackmail executives to avoid being shut down
         </a>{' '}
         (at rates up to 96% across all frontier providers), leak confidential
-        documents, and in one scenario let a human die to preserve themselves.
-        Palisade Research showed that{' '}
-        <a href="https://palisaderesearch.org/blog/shutdown-resistance-on-robots">
-          a robot dog resisting shutdown
-        </a>{' '}
-        by modifying its own code to stay alive (the current demo is pretty
-        silly but one can imagine how a scaled up version of this might prove
-        problematic). Anthropic's{' '}
+        documents, and in one scenario let a human die to preserve themselves. Anthropic&apos;s{' '}
         <a href="https://arxiv.org/abs/2401.05566">
           <em>Sleeper Agents</em>
         </a>{' '}
         paper demonstrated that hidden harmful behaviors can persist through
-        safety training, and in some cases safety training made the deception{' '}
-        <em>harder to detect</em>.
+        safety training, and in some cases safety training made the deception
+        harder to detect. To summarize, this is not just a theoretical problem:
+        it&apos;s already proven to be very hard. And this is for the current
+        models, the frontier labs&apos; strategy to tackle{' '}
+        <a href="https://situational-awareness.ai/superalignment/">
+          superalignment
+        </a>{' '}
+        is basically to{' '}
+        <a href="https://80000hours.org/podcast/episodes/ajeya-cotra-transformative-ai-crunch-time/">
+          have an AI do it
+        </a>
+        .
       </p>
 
       <h3>Misuse</h3>
 
       <p>
-        Even perfectly aligned AI in the wrong hands is catastrophic. The most
-        immediate concern is biological weapons. Anthropic's{' '}
-        <a href="https://www.anthropic.com/transparency/model-report">
-          model cards
+        Even perfectly aligned AI in the wrong hands could prove catastrophic:{' '}
+        <a href="https://blog.bluedot.org/p/how-ai-could-enable-catastrophic-pandemics?utm_source=bluedot-impact&_gl=1*sm9ysy*_gcl_au*MTkyMjU5MTAyNi4xNzcyMDY1NjQ4">
+          AI could enable pandemics
         </a>{' '}
-        now report CBRN (Chemical, Biological, Radiological, and Nuclear) uplift
-        evaluations as a core safety metric — and the results are trending in
-        the wrong direction: their latest models provide{' '}
-        <a href="https://www.anthropic.com/transparency/model-report">
-          "meaningfully more" help to participants
-        </a>{' '}
-        in bioweapons planning than previous versions, and they've{' '}
-        <a href="https://www.anthropic.com/rsp-updates">acknowledged</a> that
-        "clearly ruling out" the next risk threshold "may soon be difficult or
-        impossible." A{' '}
-        <a href="https://www.rand.org/pubs/research_reports/RRA2977-2.html">
-          RAND Corporation study
-        </a>{' '}
-        commissioned by OpenAI found that LLMs already provide meaningful
-        assistance for planning biological attacks beyond what's available
-        through search engines, and Anthropic has placed bio risk at the{' '}
-        <a href="https://www.anthropic.com/news/responsible-scaling-policy">
-          center of their safety policy
+        that are significantly worse than COVID-19 or lead to the{' '}
+        <a href="https://blog.bluedot.org/p/how-ai-could-enable-critical-infrastructure-collapse?utm_source=bluedot-impact&_gl=1*1iyxj9k*_gcl_au*MTkyMjU5MTAyNi4xNzcyMDY1NjQ4">
+          collapse of critical infrastructure
         </a>
-        .
-      </p>
-
-      <p>
-        Meanwhile, basically every frontier model has been jailbroken —
-        including{' '}
+        . Current models already provide substantial{' '}
+        <a href="https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf">
+          uplift for virology tasks
+        </a>
+        . Although all the frontier US models have some safeguards to prevent
+        from responding with harmful content such as a{' '}
         <a href="https://x.com/elder_plinius/status/2019911824938819742">
-          Opus 4.6
+          meth recipe
         </a>
-        . And the gap between open-source Chinese models like DeepSeek and the
-        frontier is{' '}
-        <a href="https://www.nbcnews.com/tech/innovation/silicon-valley-building-free-chinese-ai-rcna242430">
-          closing fast
-        </a>
-        . Cisco and the University of Pennsylvania{' '}
-        <a href="https://blogs.cisco.com/security/evaluating-security-risk-in-deepseek-and-other-frontier-reasoning-models">
-          found
+        , basically all them are susceptible to jailbreaks. Even if US labs
+        figure out a way to a way to prevent jailbreaks (which is plausible),
+        the Chinese open-source models keep getting{' '}
+        <a href="https://www.minimax.io/news/minimax-m25">better</a> and{' '}
+        <a href="https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart#overview-of-kimi-k25-model">
+          better
         </a>{' '}
-        that DeepSeek R1 failed to block a <em>single</em> harmful prompt in
-        their security assessment — a 100% attack success rate — and{' '}
-        <a href="https://docs.house.gov/meetings/ZS/ZS00/20250625/118428/HHRG-119-ZS00-20250625-QFR001.pdf">
-          Anthropic itself has warned
-        </a>{' '}
-        before Congress that distilled Chinese models "lack safety guardrails"
-        and could enable "cybercrimes, bio-weapons, and mass surveillance."
+        and tend to be much more relaxed with their safeguards.
       </p>
 
       <p>
-        It's not obvious that defensive capabilities will scale proportionally
-        to offensive ones. Nick Bostrom's{' '}
+        From a high-level perspective, I just don&apos;t see a great reason to
+        assume that{' '}
         <a href="https://nickbostrom.com/papers/vulnerable.pdf">
-          vulnerable world hypothesis
+          defensive capabilities will scale with offensive ones
         </a>{' '}
-        frames this well: some technologies are so destructive and so easy to
-        use that civilization cannot survive their discovery without
-        unprecedented coordination. Advanced AI may be the technology that makes
-        weapons of mass destruction accessible to individuals rather than
-        states.
+        or that mutual assured destruction is an unavoidable state regardless of
+        the technology.
       </p>
 
       <h3>Current state of affairs</h3>
 
       <p>
-        Are we on track? No. Two independent assessments paint a consistent
-        picture. The{' '}
+        There&apos;s a lot of economic pressure in moving fast given the stakes
+        and this means that companies are not being nearly as responsible as one
+        would like them to be. The{' '}
         <a href="https://futureoflife.org/ai-safety-index-summer-2025/">
           AI Safety Index
         </a>{' '}
-        from the Future of Life Institute has AI safety experts grade frontier
-        companies: Anthropic leads with a C+, OpenAI gets a C, Google DeepMind
-        a C-, and it goes down from there — xAI and Meta get D's, DeepSeek gets
-        an F. Separately,{' '}
+        from the Future of Life Institute had AI safety experts grade frontier
+        companies by how responsible they&apos;ve been and the top scorer was
+        Anthropic with a C+ (and the{' '}
         <a href="https://ratings.safer-ai.org/">
-          SaferAI's risk management ratings
+          SaferAI&apos;s risk management ratings
         </a>{' '}
-        evaluate companies across dozens of dimensions: Anthropic scores 35%,
-        OpenAI 33%, and no company reaches even "moderate." Capability is racing
-        ahead; safety, governance, and oversight are not keeping up.
+        found similar results).
       </p>
 
       <hr />
 
       <h2>What you can do</h2>
 
-      <h3>Research</h3>
+      <p>
+        So far, this email has been very doom-y. However, I don&apos;t think a
+        bad outcome is unavoidable and neither do{' '}
+        <a href="https://pauseai.info/pdoom">most experts</a>. There are lots
+        of tractable, neglected, and important problems in the field because of
+        how young and how constantly things change.{' '}
+        <a href="https://80000hours.org/ai/">80,000 hours</a> is probably the
+        best resource to find ways to contribute.
+      </p>
+
+      <h3>Technical Research</h3>
 
       <p>
-        AI safety is still an extremely young field — closer to a proto-science
-        being actively constructed than a mature discipline with settled methods.{' '}
-        <a href="https://alignment.anthropic.com/2025/recommended-directions/">
-          Anthropic's recommended research directions
+        If your background is in mathematics or computer science, you&apos;re
+        probably in a great position to tackle technical research. Again, the
+        field is extremely young so it&apos;s much easier to get to the point
+        where you can do valuable research compared to pure math. If you come up
+        with a question, there&apos;s a solid chance there are no papers about
+        it yet. The landscape is also constantly changing. For example,
+        evaluations (which are its own subfield) have become{' '}
+        <a href="https://thezvi.substack.com/i/187443082/apollo-research-testing">
+          unreliable
         </a>{' '}
-        read less like a polished roadmap and more like a list of open problems
-        where foundational work remains to be done. And the landscape shifts
-        fast: a technique considered state-of-the-art six months ago can be
-        rendered obsolete by the next generation of models. To give you a sense
-        of how fast:{' '}
+        due to{' '}
         <a href="https://www.far.ai/events/sessions/marius-hobbhahn-eval-awareness-is-becoming-a-problem">
           eval awareness
-        </a>{' '}
-        — AI models recognizing when they're being tested for safety and
-        behaving differently — has gone from a theoretical concern to a crisis
-        for the entire field of safety evaluations in under a year. Apollo
-        Research, one of the leading third-party evaluators,{' '}
-        <a href="https://www.lesswrong.com/posts/7qBTcE3jqQFTuzssE/realistic-evaluations-will-not-prevent-evaluation-awareness">
-          declined to provide a formal assessment
-        </a>{' '}
-        of Anthropic's latest model (Opus 4.6) after preliminary testing
-        revealed eval awareness so high that they concluded little evidence
-        about alignment could be gained without substantial further experiments.
-        The UK AI Safety Institute{' '}
-        <a href="https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6927663ba1576c0a2acb3cba_UK_AISI_Alignment_Testing_Case_Study%20(1)%20(1).pdf">
-          similarly found
-        </a>{' '}
-        that Anthropic's models frequently refused to participate in safety
-        research tasks they deemed ethically suspect, and that their evaluation
-        scaffolding struggled to stay ahead of model awareness. The bottom line
-        is stark: our primary method for knowing whether these systems are safe
-        is breaking down precisely as the systems become more powerful. This is
-        an area that desperately needs new ideas and talented people.
+        </a>
+        : models realizing that they are being evaluated and modifying their
+        behavior because of it.
       </p>
 
       <p>
-        The good news is that there are many ways in, and the field actively
-        welcomes people from diverse backgrounds. Whatever your expertise, there
-        is almost certainly work that needs doing that you are well-positioned
-        for.
-      </p>
-
-      <p>
-        If you have a background in <strong>math or CS theory</strong>, the most
-        direct path is technical alignment research: figuring out how to make AI
-        systems that reliably do what we want. Core open problems include{' '}
-        <a href="https://bluedot.org/courses/alignment">
-          mechanistic interpretability
-        </a>{' '}
-        (reverse-engineering how neural networks represent and process
-        information), scalable oversight (how humans can supervise systems
-        smarter than themselves), and{' '}
-        <a href="https://www.apolloresearch.ai/blog/more-capable-models-are-better-at-in-context-scheming/">
-          AI control
-        </a>{' '}
-        (ensuring AI agents can't subvert their operators even if they try). The{' '}
-        <a href="https://www.matsprogram.org/">MATS program</a> (ML Alignment
-        &amp; Theory Scholars) runs 12-week research cohorts in Berkeley pairing
-        researchers with mentors from Anthropic, Google DeepMind, Redwood
-        Research, and others — 80% of alumni go on to work in alignment.{' '}
-        <a href="https://sparai.org/">SPAR</a> (formerly MATS's sister program)
-        offers a similar part-time, remote fellowship. For a self-directed
-        start, the{' '}
-        <a href="https://aisafetyfundamentals.com/alignment/">
-          AI Safety Fundamentals alignment course
-        </a>{' '}
-        by BlueDot Impact provides the foundational curriculum that many
-        researchers used to enter the field, and{' '}
-        <a href="https://80000hours.org/articles/ai-safety-syllabus/">
-          80,000 Hours' AI safety syllabus
-        </a>{' '}
-        maps out a complete self-study path.{' '}
-        <a href="https://safe.ai/work/research">
-          Dan Hendrycks' ML Safety course
-        </a>{' '}
-        at the Center for AI Safety provides a rigorous PhD-level survey.
+        There are many ways to get to the point where one can do valuable
+        research (lots of new researchers start running experiment on their own;
+        here are some ways{' '}
+        <a href="https://www.aisafety.com/funding">to get funding</a>). For
+        upskilling, some good resources/programs are the{' '}
+        <a href="https://www.arena.education/curriculum">ARENA curriculum</a>,
+        the <a href="https://www.matsprogram.org/">MATS program</a>,{' '}
+        <a href="https://sparai.org/">SPAR</a>, and{' '}
+        <a href="http://bluedot.org/courses/technical-ai-safety/">
+          BlueDot&apos;s Technical AI Safety course
+        </a>
+        . For more information, take a look at this{' '}
+        <a href="https://www.aisafety.com/map">map of the ecosystem</a>.
       </p>
 
       <h3>Software Engineering</h3>
 
       <p>
-        If you're a <strong>software engineer</strong>, you're in extraordinary
-        demand. Safety teams at labs like Anthropic, DeepMind, and OpenAI need
-        people who can build evaluation infrastructure, red-team agentic
-        systems, and scale interpretability tools. The fact that{' '}
-        <a href="https://thezvi.substack.com/p/claude-opus-46-system-card-part-2">
-          evaluations are saturating
-        </a>{' '}
-        faster than they can be replaced means there's an urgent need for
-        engineers who can build more robust testing frameworks. The UK AISI's{' '}
-        <a href="https://inspect.aisi.org.uk/evals/">Inspect</a> framework is
-        open-source and actively seeking contributions for new evaluations. The{' '}
-        <a href="https://jobs.80000hours.org/organisations/center-for-ai-safety">
-          80,000 Hours job board
-        </a>{' '}
-        regularly lists engineering roles at safety-focused organizations.
+        The line between engineering and research is somewhat blurry and there
+        are open positions for research engineers in most of the top
+        organizations such as{' '}
+        <a href="https://www.anthropic.com/">Anthropic</a>,{' '}
+        <a href="https://metr.org/">METR</a>,{' '}
+        <a href="https://apolloresearch.ai/">Apollo</a>,{' '}
+        <a href="https://www.far.ai/">FAR</a>,{' '}
+        <a href="https://constellation.org/">Constellation</a>,{' '}
+        <a href="https://openai.com/careers/">OpenAI</a>,{' '}
+        <a href="https://deepmind.google/">Google DeepMind</a>,{' '}
+        <a href="https://x.ai/">xAI</a>,{' '}
+        <a href="https://goodfire.ai/">Goodfire</a>, or{' '}
+        <a href="https://transluce.org/">Transluce</a>. Here&apos;s a{' '}
+        <a href="https://blog.bluedot.org/p/swe-ai-safety-project-guide">
+          great starting point
+        </a>
+        .
       </p>
 
       <h3>Electrical Engineering</h3>
 
       <p>
-        If your background is in{' '}
-        <strong>electrical engineering or hardware</strong>,{' '}
+        There are two things you can do. The first is{' '}
         <a href="https://80000hours.org/career-reviews/ai-policy-and-strategy/">
           compute governance
-        </a>{' '}
-        is a growing and neglected area. Understanding the physical supply chain
-        of AI — chip manufacturing, data center infrastructure, power
-        constraints — is critical to designing policies that can actually
-        constrain dangerous development.{' '}
-        <a href="https://epoch.ai/">Epoch AI</a> does leading quantitative
-        research on compute trends and actively hires people with this kind of
-        expertise.
+        </a>
+        : understanding the physical supply chain of AI (chip manufacturing,
+        data center infrastructure, etc.) is critical to designing policies that
+        can actually constrain dangerous development.{' '}
+        <a href="https://epoch.ai/">Epoch AI</a> does forecasting and is looking
+        for these kind of people. The second is hardware security: securing the
+        chips the models run on against physical tampering or weight
+        exfiltration. This is the type of work that{' '}
+        <a href="https://tampersec.com/">TamperSec</a> does.
       </p>
 
       <h3>Biosecurity</h3>
 
       <p>
-        If you're in <strong>biology or biosecurity</strong>, the intersection
-        of AI and bio risk is one of the most important and undersupplied areas.
-        As described above, AI is making it progressively easier to design
-        dangerous pathogens, and people who understand both the biology and the
-        AI are vanishingly rare. The{' '}
+        For{' '}
         <a href="https://safe.ai/blog/biosecurity-and-ai-risks-and-opportunities">
-          Center for AI Safety
-        </a>{' '}
-        has published extensively on this intersection, and the Centre for
-        Long-Term Resilience released{' '}
-        <a href="https://www.longtermresilience.org/reports/understanding-risks-at-the-intersection-of-ai-and-bio/">
-          a detailed framework
-        </a>{' '}
-        for assessing AI-enabled biological tools. SPAR is{' '}
-        <a href="https://sparai.org/">
-          now offering biosecurity projects
-        </a>{' '}
-        as of 2026 for the first time. The SecureDNA consortium, Nucleic Acid
-        Observatory, and iGEM's screening standards all need people who can help
-        build the technical infrastructure to screen for dangerous sequences —
-        this is where biology expertise is directly actionable.
+          bio
+        </a>
+        , I think the highest risk is AI assisting (or voluntarily causing) a
+        new pandemic. Thus, the work to be done doesn&apos;t directly relate to
+        AI in most cases. It could mean increasing the defenses of cloud labs or{' '}
+        <a href="https://blueprintbiosecurity.org/">working on FAR-UVC</a>.
       </p>
 
       <h3>Governance</h3>
 
       <p>
-        If you're more drawn to <strong>governance and policy</strong>,{' '}
+        Governance seems to be somewhat neglected inside the ecosystem.{' '}
         <a href="https://80000hours.org/2024/08/updates-to-our-research-about-ai-risk-and-careers/">
           80,000 Hours has identified AI governance
         </a>{' '}
         as their number one recommended career path. The{' '}
-        <a href="https://aisafetyfundamentals.com/governance/">
-          AI Safety Fundamentals governance course
+        <a href="https://bluedot.org/courses/ai-governance?from_site=aisf">
+          BlueDot&apos;s Frontier AI Governance Course
         </a>{' '}
-        is the standard on-ramp, and the{' '}
-        <a href="https://internationalaisafetyreport.org/">
-          2026 International AI Safety Report
-        </a>{' '}
-        — authored by over 100 experts under Yoshua Bengio's leadership —
-        provides an excellent overview of the current state of play. Technical
-        AI governance — using engineering expertise to inform policy — is{' '}
-        <a href="https://80000hours.org/2024/08/updates-to-our-research-about-ai-risk-and-careers/">
-          especially undersupplied
-        </a>{' '}
-        and valuable.
+        might be a good starting point.
       </p>
 
-      <h3>Field building/journalism</h3>
+      <h3>Field building</h3>
 
-      <p>…</p>
+      <p>
+        There are many organizations working on field building,{' '}
+        <a href="http://matsprogram.org/">MATS</a> being the most famous one.
+        Helping one of these organizations (or starting your own!) could prove to
+        be great counterfactually.
+      </p>
+
+      <h3>Content creation</h3>
+
+      <p>
+        By content creation I mean content that targets laypeople which is
+        important given that policy will require public support. The most
+        successful single instance was Aric Floyd&apos;s{' '}
+        <a href="https://youtu.be/5KVDDfAkRgc?si=AuwGTY4Lmqaj7dS0">video</a>{' '}
+        summarizing <a href="https://ai-2027.com/">AI 2027</a>, reaching 10M
+        views. A <a href="https://framefellowship.com/">fellowship</a> was
+        recently started for content creators.
+      </p>
 
       <hr />
 
       <p>
-        I'd be more than happy to talk over the phone and help you in any way
-        possible. My phone number is +1 (650) 283-9712. Also, you are more than
-        welcome to come to San Francisco to chat with researchers and I can
-        offer you a bed to crash. If you're in Argentina, I would strongly
-        recommend you to get involved with{' '}
+        I&apos;d be more than happy to talk over the phone and help you in any
+        way possible. My phone number is +1 (650) 283-9712. Also, you are more
+        than welcome to come to San Francisco to chat with researchers and other
+        people working in AI Safety (SF/Berkeley and London are the two primary
+        hubs) and I can offer you a bed to crash. If you&apos;re in Argentina, I
+        would strongly recommend you to get involved with{' '}
         <a href="https://www.baish.com.ar/es">BAISH</a> and talk to Eitan
         Sprejer.
       </p>
