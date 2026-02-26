@@ -14,8 +14,12 @@ export default function EmailPage() {
       <p>Hi,</p>
 
       <p>
-        <strong>TL;DR:</strong> you are among the smartest people I know and I
-        think you should work on preventing AI getting everyone killed.
+        <strong>TL;DR:</strong> you are among the smartest people I know
+        and I think you should work on preventing AI getting everyone killed.
+        Superintelligence is likely coming within the next decade and we don't
+        yet know how to control it. I believe it’s a tractable problem and that
+        you can contribute directly. Don’t stand on the sidelines during the
+        story of the century.
       </p>
 
       <p>
@@ -23,16 +27,11 @@ export default function EmailPage() {
         completely wild. Please remember that, at least since the last time we
         saw each other, I&apos;m not (that) crazy and neither are the many
         people and organizations working on existential risks from AI. Even the
-        CEOs of the companies building this technology put a really high
-        probability on catastrophic risks from AI: Elon Musk, founder of xAI,
-        thinks it&apos;s between{' '}
-        <a href="https://www.youtube.com/watch?v=akXMYvKjUxM">10% and 20%</a>{' '}
-        and Dario Amodei, CEO of Anthropic, thinks it&apos;s between{' '}
+        CEOs of the companies building this technology{' '}
         <a href="https://x.com/liron/status/1710520914444718459">
-          10% and 25%
+          put a really high probability
         </a>
-        . That means they believe AI to be as dangerous as playing Russian
-        roulette with a single trigger pull.
+        {' '}on catastrophic risks from AI.
       </p>
 
       <hr />
