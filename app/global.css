@@ -192,6 +192,29 @@ table {
   border-radius: 2px;
 }
 
+.inline-link {
+  @apply underline underline-offset-2 decoration-[0.1em];
+  text-decoration-color: rgb(234 179 8 / 0.5);
+  background-image: linear-gradient(rgb(234 179 8), rgb(234 179 8));
+  background-size: 0% 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-out 0.1s, color 0.3s ease-out 0.1s, text-decoration-color 0.3s ease-out 0.1s;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.inline-link:hover {
+  background-size: 100% 100%;
+  color: black;
+  text-decoration-color: transparent;
+}
+
+.inline-link:focus-visible {
+  outline: 2px solid rgb(234 179 8);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
 
 input:focus-visible,
 textarea:focus-visible {
