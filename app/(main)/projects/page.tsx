@@ -43,10 +43,11 @@ export default function Page() {
             className="shrink-0"
           >
             <Image
-              src="/projects/chesslet-logo.svg"
+              src="/projects/chesslet-logo.png"
               width={64}
               height={64}
               alt="Chesslet logo"
+              className="rounded"
             />
           </Link>
           <div>
