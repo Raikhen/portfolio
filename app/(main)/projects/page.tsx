@@ -16,7 +16,7 @@ export default function Page() {
           <Link
             href="https://dihedral.app/"
             target="_blank"
-            className="shrink-0"
+            className="shrink-0 transition-transform duration-200 hover:scale-110"
           >
             <Image
               src="/projects/dihedral-logo.svg"
@@ -40,7 +40,7 @@ export default function Page() {
           <Link
             href="https://chesslet.xyz"
             target="_blank"
-            className="shrink-0"
+            className="shrink-0 transition-transform duration-200 hover:scale-110"
           >
             <Image
               src="/projects/chesslet-logo.png"
@@ -64,7 +64,7 @@ export default function Page() {
           <Link
             href="https://boycottcarelessai.org/"
             target="_blank"
-            className="shrink-0"
+            className="shrink-0 transition-transform duration-200 hover:scale-110"
           >
             <Image
               src="/projects/boycott-logo.svg"
@@ -83,7 +83,10 @@ export default function Page() {
             <p>
               A campaign encouraging LLM consumers to limit their model usage to
               the most responsible frontier labs, as established by the Future
-              of Life Institute's AI Safety Index.
+              of Life Institute's{' '}
+              <a href="https://aisafetyindex.org/" target="_blank" className="inline-link">
+                AI Safety Index
+              </a>.
             </p>
           </div>
         </section>
@@ -91,7 +94,7 @@ export default function Page() {
           <Link
             href="https://climbing-bench.vercel.app/"
             target="_blank"
-            className="shrink-0"
+            className="shrink-0 transition-transform duration-200 hover:scale-110"
           >
             <Image
               src="/projects/climbingbench-logo.png"
@@ -115,9 +118,30 @@ export default function Page() {
         </section>
         <section className="flex items-start gap-5">
           <Link
+            href="https://psychogpt.space/"
+            target="_blank"
+            className="shrink-0 transition-transform duration-200 hover:scale-110"
+          >
+            <span className="flex items-center justify-center w-16 h-16 text-5xl" role="img" aria-label="PsychoGPT logo">🫠</span>
+          </Link>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tighter mb-1">
+              <StyledLink href="https://psychogpt.space/">PsychoGPT</StyledLink>
+            </h2>
+            <p>
+              An interactive demo of Tim Hua's{' '}
+              <a href="https://www.alignmentforum.org/posts/iGF7YcnQkEbwvYLPA/ai-induced-psychosis-a-shallow-investigation" target="_blank" className="inline-link">
+                AI-induced psychosis experiment
+              </a>
+              , showcasing how LLMs can reinforce psychosis.
+            </p>
+          </div>
+        </section>
+        <section className="flex items-start gap-5">
+          <Link
             href="https://unverbalized-biases.vercel.app/"
             target="_blank"
-            className="shrink-0"
+            className="shrink-0 transition-transform duration-200 hover:scale-110"
           >
             <Image
               src="/projects/unverbalized-biases-logo.svg"
@@ -136,9 +160,11 @@ export default function Page() {
             <p>
               Interactive demo showing hidden biases that LLMs exhibit but never
               mention in their reasoning. Based on the paper{' '}
-              <em>
-                Biases in the Blind Spot: Detecting What LLMs Fail to Mention
-              </em>{' '}
+              <a href="https://arxiv.org/abs/2501.06467" target="_blank" className="inline-link">
+                <em>
+                  Biases in the Blind Spot: Detecting What LLMs Fail to Mention
+                </em>
+              </a>{' '}
               by Arcuschin, Chanin, Garriga-Alonso &amp; Camburu (2025).
             </p>
           </div>
