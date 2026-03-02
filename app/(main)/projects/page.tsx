@@ -118,6 +118,32 @@ export default function Page() {
         </section>
         <section className="flex items-start gap-5">
           <Link
+            href="https://convopool.vercel.app/"
+            target="_blank"
+            className="shrink-0 transition-transform duration-200 hover:scale-110"
+          >
+            <Image
+              src="/projects/convopool-logo.svg"
+              width={64}
+              height={64}
+              alt="ConvoPool logo"
+              className="rounded"
+            />
+          </Link>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tighter mb-1">
+              <StyledLink href="https://convopool.vercel.app/">
+                ConvoPool
+              </StyledLink>
+            </h2>
+            <p>
+              A Chrome extension that lets you voluntarily share your AI chat
+              conversations with a public dataset for AI safety research.
+            </p>
+          </div>
+        </section>
+        <section className="flex items-start gap-5">
+          <Link
             href="https://psychogpt.space/"
             target="_blank"
             className="shrink-0 transition-transform duration-200 hover:scale-110"
