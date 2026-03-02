@@ -19,6 +19,7 @@
 html {
   color-scheme: dark;
   min-width: 360px;
+  scrollbar-gutter: stable;
 }
 
 .prose .anchor {
@@ -42,7 +43,10 @@ html {
   background-size: 0% 100%;
   background-position: left;
   background-repeat: no-repeat;
-  transition: background-size 0.3s ease-out 0.1s, color 0.3s ease-out 0.1s, text-decoration-color 0.3s ease-out 0.1s;
+  transition:
+    background-size 0.3s ease-out 0.1s,
+    color 0.3s ease-out 0.1s,
+    text-decoration-color 0.3s ease-out 0.1s;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -176,7 +180,9 @@ table {
   background-size: 0% 100%;
   background-position: left;
   background-repeat: no-repeat;
-  transition: background-size 0.3s ease-out 0.1s, color 0.3s ease-out 0.1s;
+  transition:
+    background-size 0.3s ease-out 0.1s,
+    color 0.3s ease-out 0.1s;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -199,7 +205,10 @@ table {
   background-size: 0% 100%;
   background-position: left;
   background-repeat: no-repeat;
-  transition: background-size 0.3s ease-out 0.1s, color 0.3s ease-out 0.1s, text-decoration-color 0.3s ease-out 0.1s;
+  transition:
+    background-size 0.3s ease-out 0.1s,
+    color 0.3s ease-out 0.1s,
+    text-decoration-color 0.3s ease-out 0.1s;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
