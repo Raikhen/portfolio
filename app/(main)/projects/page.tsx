@@ -141,7 +141,7 @@ export default function Page() {
             </p>
           </div>
         </section>
-        <section className="flex items-start gap-5">
+        {/* <section className="flex items-start gap-5">
           <Link
             href="https://boycottcarelessai.org/"
             target="_blank"
@@ -175,7 +175,7 @@ export default function Page() {
               </a>.
             </p>
           </div>
-        </section>
+        </section> */}
         <section className="flex items-start gap-5">
           <Link
             href="https://climbing-bench.vercel.app/"
@@ -210,7 +210,7 @@ export default function Page() {
             </p>
           </div>
         </section>
-        <section className="flex items-start gap-5">
+        {/* <section className="flex items-start gap-5">
           <Link
             href="https://convopool.vercel.app/"
             target="_blank"
@@ -246,7 +246,7 @@ export default function Page() {
               conversations with a public dataset for AI safety research.
             </p>
           </div>
-        </section>
+        </section> */}
         <section className="flex items-start gap-5">
           <Link
             href="https://psychogpt.space/"
