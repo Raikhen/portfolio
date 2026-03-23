@@ -20,10 +20,13 @@ let publications = [
     coauthors: (
       <>
         with Santiago Aranguri and{' '}
-        <InlineLink href="https://hcsoso.github.io/">Hsien-Chih Chang</InlineLink>
+        <InlineLink href="https://hcsoso.github.io/">
+          Hsien-Chih Chang
+        </InlineLink>
       </>
     ),
-    venue: 'Proceedings of the ACM-SIAM Symposium on Discrete Algorithms (SODA)',
+    venue:
+      'Proceedings of the ACM-SIAM Symposium on Discrete Algorithms (SODA)',
     pages: 'pp. 211\u2013225',
     year: '2022',
     pdf: '/papers/feo-provan.pdf',
@@ -35,15 +38,18 @@ let publications = [
       <>
         with Juli Garbulsky,{' '}
         <InlineLink href="https://brumath.dev/">Bruno Glecer</InlineLink>,{' '}
-        <InlineLink href="https://www.singingbanana.com/">James Grime</InlineLink>,
-        and Massi Tron Florentin
+        <InlineLink href="https://www.singingbanana.com/">
+          James Grime
+        </InlineLink>
+        , and Massi Tron Florentin
       </>
     ),
     venue: 'The American Mathematical Monthly',
     pages: '126(1):70\u201373',
     year: '2019',
     pdf: '/papers/lambda.pdf',
-    journal: 'https://www.tandfonline.com/doi/full/10.1080/00029890.2019.1530554',
+    journal:
+      'https://www.tandfonline.com/doi/full/10.1080/00029890.2019.1530554',
   },
 ]
 
@@ -95,24 +101,38 @@ export default function Page() {
         <div className="space-y-6">
           {publications.map((p) => (
             <div key={p.pdf}>
-              <a href={p.pdf} target="_blank" className="highlight-link py-0.5 px-1.5 -mx-1.5 text-neutral-100 tracking-tight">
+              <a
+                href={p.pdf}
+                target="_blank"
+                className="highlight-link py-0.5 px-1.5 -mx-1.5 text-neutral-100 tracking-tight"
+              >
                 {p.title}
               </a>
-              <p className="text-neutral-400 text-sm mt-1">
-                {p.coauthors}
-              </p>
+              <p className="text-neutral-400 text-sm mt-1">{p.coauthors}</p>
               <p className="text-neutral-400 text-sm">
                 <em>{p.venue}</em>, {p.pages}, {p.year}
               </p>
               <p className="text-sm mt-1 flex gap-x-2 -ml-1">
-                <a href={p.pdf} target="_blank" className="highlight-link py-0.5 px-1">paper</a>
-                <a href={p.journal} target="_blank" className="highlight-link py-0.5 px-1">journal</a>
+                <a
+                  href={p.pdf}
+                  target="_blank"
+                  className="highlight-link py-0.5 px-1"
+                >
+                  paper
+                </a>
+                <a
+                  href={p.journal}
+                  target="_blank"
+                  className="highlight-link py-0.5 px-1"
+                >
+                  journal
+                </a>
               </p>
             </div>
           ))}
         </div>
       </section>
-      <List name="Notes and other papers" elements={notes} />
+      <List name="Other" elements={notes} />
     </div>
   )
 }
