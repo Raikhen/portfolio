@@ -28,7 +28,7 @@ export default function Footer() {
 
   return (
     <footer className="mb-16 mt-8">
-      <ul className="-ml-[8px] font-sm mt-8 flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0 text-neutral-100">
+      <ul className="-ml-[8px] font-sm mt-8 flex flex-row flex-wrap text-neutral-100">
         {elements.map((e) => (
           <Link
             target="_blank"
