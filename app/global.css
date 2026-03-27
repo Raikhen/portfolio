@@ -36,7 +36,7 @@ html {
   @apply visible;
 }
 
-.prose a {
+.prose a:not(.anchor) {
   @apply underline underline-offset-2 decoration-[0.1em];
   text-decoration-color: rgb(234 179 8 / 0.5);
   background-image: linear-gradient(rgb(234 179 8), rgb(234 179 8));
@@ -51,13 +51,13 @@ html {
   box-decoration-break: clone;
 }
 
-.prose a:hover {
+.prose a:not(.anchor):hover {
   background-size: 100% 100%;
   color: black;
   text-decoration-color: transparent;
 }
 
-.prose a:focus-visible {
+.prose a:not(.anchor):focus-visible {
   outline: 2px solid rgb(234 179 8);
   outline-offset: 2px;
   border-radius: 2px;
@@ -77,7 +77,8 @@ html {
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-lg;
+  @apply rounded-lg;
+  font-variant-numeric: tabular-nums lining-nums;
 }
 
 .prose pre code {

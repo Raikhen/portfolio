@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
 import React, { ReactNode } from 'react'
+import { Figure } from './figure'
 
 function Table({ data }: { data: { headers: string[]; rows: string[][] } }) {
   let headers = data.headers.map((header: string, index: number) => (
@@ -49,8 +50,12 @@ function RoundedImage(props: React.ComponentProps<typeof Image>) {
 }
 
 function Code({ children, ...props }: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>) {
-  let codeHTML = highlight(children as string)
-  return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
+  let content = children as string
+  if (typeof content === 'string' && (content.includes('\n') || props.className?.startsWith('language-'))) {
+    let codeHTML = highlight(content)
+    return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
+  }
+  return <code {...props}>{children}</code>
 }
 
 function slugify(str: string) {
@@ -93,10 +98,15 @@ let components = {
   h4: createHeading(4),
   h5: createHeading(5),
   h6: createHeading(6),
+  img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img className="rounded-lg" alt={props.alt || ''} {...props} />
+  ),
   Image: RoundedImage,
   a: CustomLink,
   code: Code,
   Table,
+  Figure,
 }
 
 export function CustomMDX(props: React.ComponentProps<typeof MDXRemote>) {
