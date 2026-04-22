@@ -13,10 +13,7 @@ export default function Page() {
             Software engineer with a pure math background based in San
             Francisco.
           </p>
-          <p>
-            I care about making AGI go well. I'm actively looking for
-            interesting projects so reach out if you want to collaborate.
-          </p>
+          <p>Currently doing AI Safety research under SPAR.</p>
           <p>Big fan of pointy chunks of granite.</p>
         </div>
         <div className="col-span-1">
