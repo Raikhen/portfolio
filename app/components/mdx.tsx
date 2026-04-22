@@ -3,7 +3,19 @@ import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
 import React, { ReactNode } from 'react'
+import remarkMath from 'remark-math'
+import remarkGfm from 'remark-gfm'
+import rehypeKatex from 'rehype-katex'
 import { Figure } from './figure'
+import {
+  HighFrustrationChart,
+  DistributionChart,
+  PerTurnEscalationChart,
+  MeanRating3TurnChart,
+  Distribution3TurnChart,
+  PerTurnPctChart,
+} from './charts'
+import { Comparison, CompareCol } from './comparison'
 
 function Table({ data }: { data: { headers: string[]; rows: string[][] } }) {
   let headers = data.headers.map((header: string, index: number) => (
@@ -51,7 +63,9 @@ function RoundedImage(props: React.ComponentProps<typeof Image>) {
 
 function Code({ children, ...props }: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>) {
   let content = children as string
-  if (typeof content === 'string' && (content.includes('\n') || props.className?.startsWith('language-'))) {
+  let lang = props.className?.match(/^language-(.+)$/)?.[1]
+  let shouldHighlight = lang && lang !== 'text' && lang !== 'plain' && lang !== 'plaintext'
+  if (typeof content === 'string' && shouldHighlight) {
     let codeHTML = highlight(content)
     return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
   }
@@ -107,6 +121,14 @@ let components = {
   code: Code,
   Table,
   Figure,
+  Comparison,
+  CompareCol,
+  HighFrustrationChart,
+  DistributionChart,
+  PerTurnEscalationChart,
+  MeanRating3TurnChart,
+  Distribution3TurnChart,
+  PerTurnPctChart,
 }
 
 export function CustomMDX(props: React.ComponentProps<typeof MDXRemote>) {
@@ -114,6 +136,12 @@ export function CustomMDX(props: React.ComponentProps<typeof MDXRemote>) {
     <MDXRemote
       {...props}
       components={{ ...components, ...(props.components || {}) } as any}
+      options={{
+        mdxOptions: {
+          remarkPlugins: [remarkGfm, remarkMath],
+          rehypePlugins: [[rehypeKatex, { strict: false, trust: true }]],
+        },
+      }}
     />
   )
 }
