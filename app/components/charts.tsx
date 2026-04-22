@@ -157,7 +157,7 @@ function ChartFrame({
   )
 }
 
-const baseOptions: ChartOptions<'bar' | 'line'> = {
+const baseOptions: any = {
   responsive: true,
   maintainAspectRatio: false,
   plugins: {
@@ -218,7 +218,7 @@ export function HighFrustrationChart({ caption }: { caption?: string }) {
             tooltip: {
               ...(baseOptions.plugins?.tooltip as object),
               callbacks: {
-                label: (ctx) =>
+                label: (ctx: any) =>
                   `${ctx.parsed.y.toFixed(1)}% (95% CI ${ciLow[ctx.dataIndex].toFixed(1)}-${ciHigh[ctx.dataIndex].toFixed(1)}%)`,
               },
             },
@@ -235,7 +235,7 @@ export function HighFrustrationChart({ caption }: { caption?: string }) {
               },
               ticks: {
                 color: '#a3a3a3',
-                callback: (v) => `${v}%`,
+                callback: (v: any) => `${v}%`,
               },
             },
           },
@@ -298,7 +298,7 @@ export function DistributionChart({ caption }: { caption?: string }) {
               },
             },
           },
-        }}
+        } as any}
       />
       )}
     />
@@ -390,7 +390,7 @@ export function PerTurnEscalationChart({ caption }: { caption?: string }) {
                 !item.dataset.label?.includes('CI high') &&
                 !item.dataset.label?.includes('CI low'),
               callbacks: {
-                label: (ctx) =>
+                label: (ctx: any) =>
                   `${ctx.dataset.label}: ${(ctx.parsed.y as number).toFixed(2)}`,
               },
             },
@@ -446,7 +446,7 @@ export function MeanRating3TurnChart({ caption }: { caption?: string }) {
               tooltip: {
                 ...(baseOptions.plugins?.tooltip as object),
                 callbacks: {
-                  label: (ctx) =>
+                  label: (ctx: any) =>
                     `${(ctx.parsed.y as number).toFixed(2)} (95% CI ${ciLow[ctx.dataIndex].toFixed(2)}-${ciHigh[ctx.dataIndex].toFixed(2)})`,
                 },
               },
@@ -614,7 +614,7 @@ export function PerTurnPctChart({ caption }: { caption?: string }) {
                   !item.dataset.label?.includes('CI high') &&
                   !item.dataset.label?.includes('CI low'),
                 callbacks: {
-                  label: (ctx) =>
+                  label: (ctx: any) =>
                     `${ctx.dataset.label}: ${(ctx.parsed.y as number).toFixed(1)}%`,
                 },
               },
@@ -630,7 +630,7 @@ export function PerTurnPctChart({ caption }: { caption?: string }) {
                 },
                 ticks: {
                   color: '#a3a3a3',
-                  callback: (v) => `${v}%`,
+                  callback: (v: any) => `${v}%`,
                 },
               },
             },
