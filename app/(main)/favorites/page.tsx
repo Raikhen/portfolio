@@ -53,6 +53,12 @@ export default function Page() {
       name: 'Ritmo Latino en la Cara Oeste del Cerro Torre',
       url: 'https://youtu.be/LIU13_lASbs?si=HVQSEFZfDQQLSy5L',
       from: 'Movie'
+    },
+    {
+      name: 'Computational Complexity as an Ultimate Constraint on Evolution',
+      author: 'Artem Kaznatcheev',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6499524/pdf/245.pdf',
+      from: 'Paper'
     }
   ]
 
