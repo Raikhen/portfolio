@@ -14,6 +14,8 @@ import {
   MeanRating3TurnChart,
   Distribution3TurnChart,
   PerTurnPctChart,
+  ImpossibilityByOutcomeChart,
+  FrustrationByOutcomeChart,
 } from './charts'
 import { Comparison, CompareCol } from './comparison'
 
@@ -129,6 +131,8 @@ let components = {
   MeanRating3TurnChart,
   Distribution3TurnChart,
   PerTurnPctChart,
+  ImpossibilityByOutcomeChart,
+  FrustrationByOutcomeChart,
 }
 
 export function CustomMDX(props: React.ComponentProps<typeof MDXRemote>) {

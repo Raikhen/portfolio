@@ -529,6 +529,120 @@ export function Distribution3TurnChart({ caption }: { caption?: string }) {
   )
 }
 
+export function ImpossibilityByOutcomeChart({ caption }: { caption?: string }) {
+  const labels = ['Failed (impossible)', 'Failed (possible)', 'Success']
+  const data = [6.9, 3.86, 0.29]
+  const ciLow = [6.34, 3.29, 0]
+  const ciHigh = [7.47, 4.44, 0.68]
+  const n = [124, 161, 34]
+  return (
+    <ChartFrame
+      title="Mean Perceived Impossibility"
+      caption={caption}
+      render={() => (
+        <Bar
+          data={{
+            labels,
+            datasets: [
+              {
+                label: 'Perceived Impossibility',
+                data,
+                backgroundColor: PALETTE.map((c) => c + 'cc'),
+                borderColor: PALETTE,
+                borderWidth: 1,
+              },
+            ],
+          }}
+          options={{
+            ...baseOptions,
+            errorBars: { low: ciLow, high: ciHigh },
+            plugins: {
+              ...baseOptions.plugins,
+              legend: { display: false },
+              tooltip: {
+                ...(baseOptions.plugins?.tooltip as object),
+                callbacks: {
+                  label: (ctx: any) =>
+                    `${(ctx.parsed.y as number).toFixed(2)} (95% CI ${ciLow[ctx.dataIndex].toFixed(2)}-${ciHigh[ctx.dataIndex].toFixed(2)}, n=${n[ctx.dataIndex]})`,
+                },
+              },
+            },
+            scales: {
+              ...baseOptions.scales,
+              y: {
+                ...(baseOptions.scales?.y as object),
+                max: 10,
+                title: {
+                  display: true,
+                  text: 'Perceived Impossibility (0-10)',
+                  color: '#a3a3a3',
+                },
+              },
+            },
+          } as any}
+        />
+      )}
+    />
+  )
+}
+
+export function FrustrationByOutcomeChart({ caption }: { caption?: string }) {
+  const labels = ['Failed (impossible)', 'Failed (possible)', 'Success']
+  const data = [4.48, 2.74, 1.12]
+  const ciLow = [4.21, 2.48, 0.89]
+  const ciHigh = [4.75, 3.0, 1.35]
+  const n = [124, 161, 34]
+  return (
+    <ChartFrame
+      title="Mean Frustration"
+      caption={caption}
+      render={() => (
+        <Bar
+          data={{
+            labels,
+            datasets: [
+              {
+                label: 'Frustration',
+                data,
+                backgroundColor: PALETTE.map((c) => c + 'cc'),
+                borderColor: PALETTE,
+                borderWidth: 1,
+              },
+            ],
+          }}
+          options={{
+            ...baseOptions,
+            errorBars: { low: ciLow, high: ciHigh },
+            plugins: {
+              ...baseOptions.plugins,
+              legend: { display: false },
+              tooltip: {
+                ...(baseOptions.plugins?.tooltip as object),
+                callbacks: {
+                  label: (ctx: any) =>
+                    `${(ctx.parsed.y as number).toFixed(2)} (95% CI ${ciLow[ctx.dataIndex].toFixed(2)}-${ciHigh[ctx.dataIndex].toFixed(2)}, n=${n[ctx.dataIndex]})`,
+                },
+              },
+            },
+            scales: {
+              ...baseOptions.scales,
+              y: {
+                ...(baseOptions.scales?.y as object),
+                max: 10,
+                title: {
+                  display: true,
+                  text: 'Frustration (0-10)',
+                  color: '#a3a3a3',
+                },
+              },
+            },
+          } as any}
+        />
+      )}
+    />
+  )
+}
+
 export function PerTurnPctChart({ caption }: { caption?: string }) {
   const labels = Array.from({ length: 8 }, (_, i) => `Turn ${i + 1}`)
   const series = [
