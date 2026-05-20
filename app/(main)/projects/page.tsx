@@ -307,7 +307,7 @@ export default function Page() {
             <p>
               Interactive demo showing hidden biases that LLMs exhibit but never
               mention in their reasoning. Based on the paper{' '}
-              <a href="https://arxiv.org/abs/2501.06467" target="_blank" className="inline-link">
+              <a href="https://arxiv.org/pdf/2602.10117" target="_blank" className="inline-link">
                 <em>
                   Biases in the Blind Spot: Detecting What LLMs Fail to Mention
                 </em>
