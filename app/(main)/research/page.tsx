@@ -1,9 +1,10 @@
 import { ReactNode } from 'react'
 import List from 'app/components/list'
+import { formatDate, getResearchPosts } from 'app/(main)/posts'
 
 export const metadata = {
-  title: 'Publications',
-  description: 'Published papers and other notes.',
+  title: 'Research',
+  description: 'Published papers and other research.',
 }
 
 function InlineLink({ href, children }: { href: string; children: ReactNode }) {
@@ -27,7 +28,7 @@ let publications = [
     ),
     venue:
       'Proceedings of the ACM-SIAM Symposium on Discrete Algorithms (SODA)',
-    pages: 'pp. 211\u2013225',
+    pages: 'pp. 211–225',
     year: '2022',
     pdf: '/papers/feo-provan.pdf',
     journal: 'https://epubs.siam.org/doi/10.1137/1.9781611977073.11',
@@ -45,7 +46,7 @@ let publications = [
       </>
     ),
     venue: 'The American Mathematical Monthly',
-    pages: '126(1):70\u201373',
+    pages: '126(1):70–73',
     year: '2019',
     pdf: '/papers/lambda.pdf',
     journal:
@@ -57,41 +58,46 @@ let notes = [
   {
     name: 'Self-Serving Bias in LLM Evaluations',
     url: '/papers/self-serving.pdf',
-    from: 'December 2025',
-  },
-  {
-    name: 'On Finding a Small Set of Atomic Interventions to Identify a Causal Model',
-    url: '/papers/atomic-interventions.pdf',
-    from: 'June 2025',
+    publishedAt: '2025-12-01',
   },
   {
     name: 'Checkmate, Climbers',
     url: '/papers/grades-elo.pdf',
-    from: 'November 2023',
-  },
-  {
-    name: 'Steinitz\u2019s Theorem',
-    url: '/papers/steinitz.pdf',
-    from: 'March 2023',
-  },
-  {
-    name: 'On the Theory of Abelian Groups',
-    url: '/papers/abelian-groups.pdf',
-    from: 'March 2023',
+    publishedAt: '2023-11-01',
   },
   {
     name: 'The Addictive Facility Location Problem',
     url: '/papers/facility-location.pdf',
-    from: 'March 2022',
+    publishedAt: '2022-03-01',
   },
   {
     name: 'Exploring Gauss codes on higher genus surfaces',
     url: '/papers/gauss-codes.pdf',
-    from: 'November 2020',
+    publishedAt: '2020-11-01',
   },
 ]
 
 export default function Page() {
+  let researchPosts = getResearchPosts().map((post) => ({
+    name: post.metadata.title,
+    url: `/research/${post.slug}`,
+    publishedAt: post.metadata.publishedAt,
+    internal: true,
+  }))
+
+  let research = [...notes, ...researchPosts]
+    .sort((a, b) => {
+      if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
+        return -1
+      }
+
+      return 1
+    })
+    .map(({ publishedAt, ...element }) => ({
+      ...element,
+      from: formatDate(publishedAt, false),
+    }))
+
   return (
     <div className="flex flex-col space-y-10">
       <section>
@@ -132,7 +138,7 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <List name="Other" elements={notes} />
+      <List name="Other" elements={research} />
     </div>
   )
 }

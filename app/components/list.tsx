@@ -5,6 +5,7 @@ interface Element {
   author?: string
   url: string
   from: string
+  internal?: boolean
 }
 
 interface ListProps {
@@ -36,7 +37,7 @@ export default function List({
                 {e.from}
               </p>
               <p className="text-neutral-100 tracking-tight col-span-2">
-                <StyledLink href={e.url} internal={internalLinks}>
+                <StyledLink href={e.url} internal={e.internal ?? internalLinks}>
                     {e.name}{e.author && <span className="text-neutral-400 group-hover/link:text-inherit"> by {e.author}</span>}
                 </StyledLink>
               </p>
