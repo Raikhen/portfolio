@@ -100,7 +100,7 @@ export default function Page() {
               </span>
             </h2>
             <p>
-              A learning platform for climbing systems that sharpens the user's
+              Learning platform for climbing systems that sharpens the user's
               problem-solving skills by presenting them with difficult,
               realistic scenarios.
             </p>
@@ -136,8 +136,41 @@ export default function Page() {
               </span>
             </h2>
             <p>
-              A chess puzzle game in which the player must capture their own
+              Chess puzzle game in which the player must capture their own
               pieces until only one remains.
+            </p>
+          </div>
+        </section>
+        <section className="flex items-start gap-5">
+          <Link
+            href="https://agitrajectory.com/"
+            target="_blank"
+            className="shrink-0 transition-transform duration-200 hover:scale-110"
+          >
+            <Image
+              src="/projects/agitrajectory-logo.svg"
+              width={64}
+              height={64}
+              alt="AGI Trajectory logo"
+            />
+          </Link>
+          <div>
+            <h2 className="text-xl font-semibold tracking-tighter mb-1 flex items-center gap-3">
+              <StyledLink href="https://agitrajectory.com/">
+                AGI Trajectory
+              </StyledLink>
+              <span className="flex items-center gap-2.5">
+                <IconButton href="https://agitrajectory.com/" label="AGI Trajectory website">
+                  <GlobeIcon />
+                </IconButton>
+                <IconButton href="https://github.com/Raikhen/agi-timeline" label="AGI Trajectory on GitHub">
+                  <GitHubIcon />
+                </IconButton>
+              </span>
+            </h2>
+            <p>
+              Interactive timeline documenting the important events and
+              milestones in the path to AGI.
             </p>
           </div>
         </section>
@@ -167,7 +200,7 @@ export default function Page() {
               </span>
             </h2>
             <p>
-              A campaign encouraging LLM consumers to limit their model usage to
+              Campaign encouraging LLM consumers to limit their model usage to
               the most responsible frontier labs, as established by the Future
               of Life Institute's{' '}
               <a href="https://aisafetyindex.org/" target="_blank" className="inline-link">
@@ -205,7 +238,7 @@ export default function Page() {
               </span>
             </h2>
             <p>
-              A benchmark for evaluating how well LLMs understand climbing
+              Benchmark for evaluating how well LLMs understand climbing
               systems and how well they can problem-solve.
             </p>
           </div>
@@ -242,7 +275,7 @@ export default function Page() {
               </span>
             </h2>
             <p>
-              A Chrome extension that lets you voluntarily share your AI chat
+              Chrome extension that lets you voluntarily share your AI chat
               conversations with a public dataset for AI safety research.
             </p>
           </div>
@@ -268,7 +301,7 @@ export default function Page() {
               </span>
             </h2>
             <p>
-              An interactive demo of Tim Hua's{' '}
+              Interactive demo of Tim Hua's{' '}
               <a href="https://www.alignmentforum.org/posts/iGF7YcnQkEbwvYLPA/ai-induced-psychosis-a-shallow-investigation" target="_blank" className="inline-link">
                 AI-induced psychosis experiment
               </a>
