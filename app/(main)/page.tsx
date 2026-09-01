@@ -13,8 +13,15 @@ export default function Page() {
             Software engineer with a pure math background based in San
             Francisco.
           </p>
-          <p>Currently doing AI Safety research under SPAR.</p>
-          <p>Big fan of pointy chunks of granite.</p>
+          <p>
+            I'm currently doing independent technical research to make AI go
+            well for non-human animals. If you're interested in collaborating,
+            feel free to reach out!
+          </p>
+          <p>
+            In my free time, I enjoy climbing, dancing, lifting, and singing
+            with friends.
+          </p>
         </div>
         <div className="col-span-1">
           <Image
