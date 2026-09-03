@@ -20,7 +20,11 @@ let publications = [
     title: 'Untangling Planar Graphs and Curves by Staying Positive',
     coauthors: (
       <>
-        with Santiago Aranguri and{' '}
+        with{' '}
+        <InlineLink href="https://santiaranguri.com/">
+          Santiago Aranguri
+        </InlineLink>{' '}
+        and{' '}
         <InlineLink href="https://hcsoso.github.io/">
           Hsien-Chih Chang
         </InlineLink>
