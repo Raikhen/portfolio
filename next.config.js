@@ -21,6 +21,14 @@ const nextConfig = {
       })),
     ]
   },
+  async rewrites() {
+    return [
+      {
+        source: '/neel-mats-animals',
+        destination: '/papers/neel-mats-animals.pdf',
+      },
+    ]
+  },
 }
  
 module.exports = nextConfig
